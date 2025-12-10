@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Shahtaj (Iqra)!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="index.css">
+    
+    <script src="script.js" defer></script> 
+</head>
+<body>
+
+    <div class="container floating-effect">
+        <header class="wish-header">
+            <h1>🎉 Happy Birthday, SHAHTAJ (Iqra)! 🎉</h1>
+            <h2>Are you Now officially 20 years old today!</h2> 
+            <p>Aap jaisa dost milna kismat ki baat hai. Wishing you the happiest day!</p>
+            <p class="dob-info">Born on: 10th June 2005</p>
+        </header>
+
+        <section class="gallery">
+            
+            <div class="photo-card glow">
+                <img src="dearpic.jpg" alt="Best Friend Photo 1">
+                <div class="caption">Sab se Pahle Ap ka khubsourat Chahra</div>
+            </div>
+
+            <div class="video-card glow" onclick="openModal('happybirthday3.mp4', 'Ikhtiar Dahri ki taraf se video message!')">
+                <img src="123.jpg" alt="Video Poster 1" style="width:100%; height:200px; object-fit:cover;">
+                <div class="caption">Meri se taraf se video message! (Click to Play)</div>
+            </div>
+            
+            <div class="photo-card glow">
+                <img src="firstgame1.jpg" alt="Best Friend Photo 2">
+                <div class="caption">Sab se Pahli Mulakaat Wala seen!</div>
+            </div>
+
+            <div class="video-card glow" onclick="openModal('happybirthday2.mp4', 'Humein milkar party karni hai!')">
+                <img src="mypic.png" alt="Video Poster 2" style="width:100%; height:200px; object-fit:cover;">
+                <div class="caption">Humein milkar party karni hai! (Click to Play)</div>
+            </div>
+
+            <div class="photo-card glow">
+                <img src="abcd.jpg" alt="Best Friend Photo 3">
+                <div class="caption"> Kash wo din Aye hamari Mulakaat Ho jaye</div>
+            </div>
+            
+            <div class="video-card glow" onclick="openModal('wish6.mp4', 'Is gareeb ki taraf se special wish!')">
+                <img src="sad.jpg" alt="Video Poster 3" style="width:100%; height:200px; object-fit:cover;">
+                <div class="caption">Is gareeb ki taraf se special wish!(Click to Play)</div>
+            </div>
+
+        </section>
+
+        <footer class="wish-footer">
+            <p>Love, Your Best Buddies, Ikhtiar Dahri Your Shahzada</p>
+        </footer>
+    </div>
+
+    <div id="videoModal" class="modal" onclick="closeModal(event)">
+        <span class="close-btn" onclick="closeModal(event)">&times;</span>
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <video id="fullScreenVideo" controls autoplay></video> 
+            <div id="modalCaption" class="modal-caption"></div>
+        </div>
+    </div>
+    
+    <audio id="birthdaySound" src="applause.mp3" preload="auto"></audio> 
+    
+</body>
+</html>
